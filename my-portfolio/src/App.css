@@ -1,11 +1,22 @@
-.App {
-  text-align: center;
+/* App.css */
+@font-face {
+  font-family: 'Estable';
+  src: url('../assets/fonts/Estable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  margin: 0;
+  background-color: #0E0E0E;
+  font-family: 'Estable', sans-serif;
 }
+
+a {
+  color: inherit;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

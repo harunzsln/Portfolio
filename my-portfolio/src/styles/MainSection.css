@@ -1,0 +1,29 @@
+/* src/styles/MainSection.css */
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 400px;
+  background-color: #0e0e0e;
+  color: white;
+}
+
+.intro-text {
+  width: 50%;
+ margin-left: 10%;
+}
+.intro-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.main-image {
+  width: 30%;
+  margin-right: 10%;
+}
+
+.main-image img {
+
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}

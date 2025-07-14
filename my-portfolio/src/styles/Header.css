@@ -1,0 +1,62 @@
+/*
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+  border-radius: 100px;
+  background-color: #111;
+  color: white;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 100;
+}
+
+.nav a {
+  margin-left: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+*/
+
+.header {
+  display: flex;
+  align-items: center;     /* yatayda ortalar */
+  justify-content: center; /* dikeyde ortalar */
+  max-width: 700px; /* maksimum genişlik */
+  margin: 0 auto; /* ortalamak için */
+  padding: 20px 0;
+  background-color: #4e3b3b;
+  border-radius: 50px;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+}
+
+.logo {
+  margin-right: 200px; /* logo ile menü arasındaki boşluk */
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.nav {
+  display: flex;
+  gap: 20px; /* linkler arası boşluk */
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
