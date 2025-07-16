@@ -3,8 +3,8 @@ import './App.css';
 
 import Header from './components/Header';
 import MainSection from './components/MainSection';
-/*import About from './components/About';
-import Blog from './components/Blog';
+import About from './components/About';
+/*import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';*/
 
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Header />
       <MainSection />
-      {/* <About /> */}
+      <About />
       {/* <Blog /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}
