@@ -17,21 +17,20 @@ a {
   color: inherit;
 }
 
-
+/*
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .spinning-image {
+    animation: spin infinite 360s linear;
   }
 }
 
-
-
-
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+*/
