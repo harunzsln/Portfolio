@@ -6,11 +6,11 @@ const Social = () => {
     return (
         <section className="social-section" id="social">
             <div className="social-cards">
-                <div className="card">
+               {/* <div className="card">
                     <div className="icon"></div>
                     <h3>Full Name</h3>
                     <p>Harun Genel</p>
-                </div>
+                </div>*/}
                 <div className="card clickable">
                     <div className="icon"><FaEnvelope /></div>
                     <h3>Email Address</h3>
