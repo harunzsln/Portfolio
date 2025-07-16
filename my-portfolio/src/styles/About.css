@@ -1,12 +1,12 @@
 .about-section {
-  background-color: #111;
+  background-color: #0E0E0E;
   padding: 60px 20px;
   text-align: center;
 }
 
 .about-me {
-    font-size: 16px;
-  margin: 10px 0 5px;
+    font-size: 18px;
+  margin: 10px 0 20px;
   font-weight: 100;
     color: white;
     max-width: 800px;
@@ -15,60 +15,8 @@
     margin: 0 auto;
 }
 
-
-.about-cards {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+.about-me h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.card {
-  background: transparent;
-  color: white;
-  width: 180px;
-  padding: 20px;
-  border-radius: 12px;
-}
-
-.card .icon {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto 10px;
-  background-color: #1f1f1f;
-  border-radius: 50%;
-  position: relative;
-}
-
-.card .icon::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 12px;
-  height: 12px;
-  background-color: #2ecc71;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card h3 {
-  font-size: 16px;
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-.card p {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-.card.clickable {
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.card.clickable:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
