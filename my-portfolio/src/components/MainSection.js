@@ -1,7 +1,8 @@
 // src/components/MainSection.jsx
 import React from 'react';
 import '../styles/MainSection.css';
-import image from '../images/image.jpg'; // Örnek görsel ekleyebilirsin
+import '../App.css'; 
+import image from '../images/image.jpg'; 
 
 const MainSection = () => {
   return (
@@ -12,7 +13,7 @@ const MainSection = () => {
 
       </div>
       <div className="main-image">
-        <img src={image} alt="Main" />
+        <img  src={image} alt="Main" className="spinning-image" />
       </div>
 
     </section>
