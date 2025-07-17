@@ -3,6 +3,9 @@
     padding: 25px;
     text-align: center;
     border-radius: 100px;
+    opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.9s ease forwards;
 }
 
 
@@ -30,7 +33,7 @@
     align-items: center;
     font-size: 28px;
     margin: 0 auto 10px;
-    color: #68a468;
+    color: #0aaa9a;
     width: 50px;
     height: 50px;
     margin: 0 auto 40px;
@@ -64,10 +67,36 @@
 .card.clickable {
     cursor: pointer;
     transition: transform 0.2s ease;
+    opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.9s ease forwards;
 }
 
 .card.clickable:hover {
     transform: scale(1.05);
     opacity: 0.9;
     
+}
+
+.card.clickable:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.card.clickable:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.card.clickable:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.card.clickable:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.card.clickable:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

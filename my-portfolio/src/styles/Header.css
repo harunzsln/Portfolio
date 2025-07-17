@@ -33,11 +33,14 @@
   max-width: 700px; 
   margin: 0 auto; 
   padding: 20px 0;
-  background-color: #68a4683b;
+  background-color: #0cb09f31;
   border-radius: 50px;
   opacity: 0.8;
   color: white;
   text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.9s ease forwards;
 }
 
 .logo {

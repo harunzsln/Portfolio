@@ -2,6 +2,9 @@
   background-color: #0E0E0E;
   padding: 80px 20px;
   text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.9s ease forwards;
 }
 
 .about-me {
@@ -18,6 +21,6 @@
 .about-me h1 {
   font-size: 36px;
   margin-bottom: 20px;
-  font-weight: 100;
+  font-weight: bold;
 }
 
