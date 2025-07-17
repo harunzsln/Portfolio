@@ -7,8 +7,8 @@ import About from './components/About';
 import Social from './components/Social';
 //import MatrixRain from './components/matrixRain';
 
-/*import Blog from './components/Blog';
-import Contact from './components/Contact';
+import Blog from './components/Blog';
+/*import Contact from './components/Contact';
 import Footer from './components/Footer';*/
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <MainSection />
       <About />
       <Social />
-      {/* <Blog /> */}
+       <Blog /> 
       {/* <Contact /> */}
       {/* <Footer /> */}
     </div>
