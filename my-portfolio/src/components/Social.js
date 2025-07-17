@@ -1,20 +1,21 @@
 import React from "react";
 import '../styles/Social.css';
-import { FaEnvelope, FaMedium, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaMedium, FaGithub, FaLinkedin, FaSpotify } from 'react-icons/fa';
 
 const Social = () => {
+
+    const handleEmailClick = () => {
+    window.open('harunzsln0@gmail.com', '_blank');
+  };
+
     return (
         <section className="social-section" id="social">
             <div className="social-cards">
-               {/* <div className="card">
-                    <div className="icon"></div>
-                    <h3>Full Name</h3>
-                    <p>Harun Genel</p>
-                </div>*/}
-                <div className="card clickable">
+
+                <div className="card clickable" onClick={handleEmailClick} style={{ cursor: 'pointer' }}>
                     <div className="icon"><FaEnvelope /></div>
-                    <h3>Email Address</h3>
-                    <p><a href="mailto:harunzsln0@gmail.com">Send email</a></p>
+                    <h3>Email</h3>
+                    <p>Send email</p>
                 </div>
                 <div
                     className="card clickable"
@@ -32,15 +33,19 @@ const Social = () => {
                     <h3>Github</h3>
                     <p>@harunzsln</p>
                 </div>
-                 <div
+                <div
                     className="card clickable"
                     onClick={() => window.open('https://www.linkedin.com/in/harun-ozaslan', '_blank')}
                 >
-                    <div className="icon"><FaLinkedin/></div>
+                    <div className="icon"><FaLinkedin /></div>
                     <h3>Linkedin</h3>
-                    <p>Lets Connect</p>
+                    <p>Let's Connect</p>
                 </div>
-                
+                <div className="card clickable">
+                    <div className="icon"><FaSpotify /></div>
+                    <h3>Spotify</h3>
+                    <p><a href="https://open.spotify.com/user/ig4jea9ln2nz9ppx3qzlshqrh?si=70b0bfddb3674166">Let's Listen</a></p>
+                </div>
             </div>
 
         </section>

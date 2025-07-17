@@ -7,15 +7,19 @@
 }
 
 
+
 body {
   margin: 0;
   background-color: #0E0E0E;
   font-family: 'Estable', sans-serif;
+  
 }
 
 a {
   color: inherit;
 }
+
+
 
 /*
 @media (prefers-reduced-motion: no-preference) {

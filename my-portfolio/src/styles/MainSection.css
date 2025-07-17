@@ -3,10 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 400px;
-  background-color: #0e0e0e;
+  padding: 150px 350px;
+  background-color: #0e0e0eaa;
   color: white;
-  gap: 60px;
+  gap: 70px;
 }
 
 .intro-text {
