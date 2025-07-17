@@ -23,30 +23,30 @@
 @font-face {
   font-family: 'Fira Code';
   src: url('../assets/fonts/Fira_Code/static/FiraCode-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: light;
+  font-style: light;
 }
 
 
 @font-face {
   font-family: 'Fira Code';
   src: url('../assets/fonts/Fira_Code/static/FiraCode-Medium.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: medium;
+  font-style: medium;
 }
 
 @font-face {
   font-family: 'Fira Code';
   src: url('../assets/fonts/Fira_Code/static/FiraCode-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: regular;
+  font-style: regular;
 }
 
 @font-face {
   font-family: 'Fira Code';
   src: url('../assets/fonts/Fira_Code/static/FiraCode-SemiBold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: semi-bold;
+  font-style: semi-bold;
 }
 
 
