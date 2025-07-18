@@ -5,7 +5,10 @@ import { FaEnvelope, FaMedium, FaGithub, FaLinkedin, FaSpotify } from 'react-ico
 const Social = () => {
 
     const handleEmailClick = () => {
-    window.open('harunzsln0@gmail.com', '_blank');
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({behavior: 'smooth'})
+        }
   };
 
     return (
