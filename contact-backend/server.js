@@ -10,9 +10,9 @@ app.use(express.json());
 
 app.post('/contact', async (req, res) => {
 
-    const { name, email, message } = req.body;
+    const { name, surname, email, message } = req.body;
 
-    if (!name || !email || !message) {
+    if (!name || !surname || !email || !message) {
         return res.status(400).json({ error: 'All fields are required' });
     }
 
@@ -28,9 +28,9 @@ app.post('/contact', async (req, res) => {
     try {
 
         await transporter.sendMail({
-            from: `"${name}" <${email}>`,
+            from: `"${name, surname}" <${email}>`,
             to: process.env.TO_EMAIL,
-            subject: `New contact form submission from ${name}`,
+            subject: `New contact form submission from ${name, surname}`,
             text: message,
         });
 
