@@ -1,3 +1,4 @@
+/*
 .social-section {
     background-color: #111;
     padding: 25px;
@@ -98,5 +99,159 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+*/
+
+
+.social-section {
+  background-color: #111;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 100px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.9s ease forwards;
+}
+
+.social-cards {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: transparent;
+  color: white;
+  width: 180px;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin: 0 auto 40px;
+  color: #0aaa9a;
+  width: 50px;
+  height: 50px;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+}
+
+.card .icon:hover {
+  color: #fff;
+  background-color: #5e865e;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.card.clickable {
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.9s ease forwards;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.card.clickable:hover {
+  transform: translateY(-6px) scale(1.04);
+  opacity: 1;
+  background-color: #1b1b1b;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card.clickable:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.card.clickable:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card.clickable:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.card.clickable:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.card.clickable:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .social-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 24px;
+  }
+
+  .card .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .social-cards {
+    gap: 50px;
+  }
+
+  .card {
+    width: 160px;
+    padding: 26px;
+  }
+
+  .card .icon {
+    font-size: 26px;
   }
 }

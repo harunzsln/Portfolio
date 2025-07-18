@@ -1,0 +1,199 @@
+/*
+.contact-section {
+  padding: 100px 20px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form h2 {
+  margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #2ecc7065;
+  color: white;
+  font-size: 16px;
+  padding: 10px 5px;
+  resize: none; 
+  outline: none; 
+  transition: border-color 0.3s;
+}
+
+.contact-form input,
+.contact-form textarea:focus {
+  border-bottom: 2px solid #2ecc7065; 
+}
+
+
+.contact-form input,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+
+.contact-form button {
+  padding: 12px;
+  background-color: #2ecc7089;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+      color: #fff;
+    background-color: #5e865e;
+}
+
+.contact-form button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.success-msg {
+  color: #2ecc71;
+  margin-top: 10px;
+}
+
+.error-msg {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+*/
+
+
+.contact-section {
+  padding: 100px 20px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form h2 {
+  margin-bottom: 30px;
+  font-weight: 100;
+  font-size: 36px;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #2ecc7065;
+  color: white;
+  font-size: 16px;
+  padding: 10px 5px;
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid #2ecc7065;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #2ecc7089;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  color: #fff;
+  background-color: #5e865e;
+}
+
+.contact-form button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.success-msg {
+  color: #2ecc71;
+  margin-top: 10px;
+}
+
+.error-msg {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 16px;
+  }
+
+  .contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 8px 4px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-section {
+    padding: 80px 30px;
+  }
+
+  .contact-form h2 {
+    font-size: 32px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 15px;
+  }
+
+  .contact-form button {
+    font-size: 15px;
+    padding: 11px;
+  }
+}
