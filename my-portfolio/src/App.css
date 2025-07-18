@@ -16,7 +16,7 @@
 @font-face {
   font-family: 'Fira Code';
   src: url('../assets/fonts/Fira_Code/static/FiraCode-Bold.ttf') format('truetype');
-  font-weight:bold;
+  font-weight: bold;
   font-style: bold;
 }
 
@@ -52,12 +52,10 @@
 
 
 
-
-
 body {
   margin: 0;
   background-color: #0E0E0E;
-  font-family: 'Estable', sans-serif;
+  font-family: 'Fira Code', sans-serif;
   opacity: 0;
   transform: translateY(20px);
   animation: slideFadeIn 0.9s ease forwards;

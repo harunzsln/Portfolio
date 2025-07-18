@@ -8,8 +8,8 @@ import Social from './components/Social';
 //import MatrixRain from './components/matrixRain';
 
 import Blog from './components/Blog';
-/*import Contact from './components/Contact';
-import Footer from './components/Footer';*/
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
       <About />
       <Social />
        <Blog /> 
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }
