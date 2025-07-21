@@ -28,17 +28,32 @@ app.post('/contact', async (req, res) => {
     try {
 
         await transporter.sendMail({
-            from: `"${name}" <${email}>`,
+            /*from: `"${name}" <${email}>`,
             to: process.env.TO_EMAIL,
             subject: `New contact form submission from ${name}`,
-            text: message,
+            text: "from =" + email + " " + message,*/
+
+            from: `"${name}" <${process.env.SMTP_USER}>`,  // Gönderen senin adresin
+            to: process.env.TO_EMAIL,                     // Alıcı sensin
+            replyTo: email,                               // Cevapla dendiğinde kullanıcıya gider
+            subject: `Yeni mesaj: ${name}`,
+            text: `
+Yeni bir mesaj aldınız:
+
+👤 İsim: ${name}
+📧 E-posta: ${email}
+
+📝 Mesaj:
+${message}
+  `,
+
         });
 
-        res.status(200).json({success: true, message: 'Email sent successfully' });
+        res.status(200).json({ success: true, message: 'Email sent successfully' });
     } catch (error) {
         console.error('Error sending email:', error);
-        res.status(500).json({success: false, message: 'Failed to send email' });
-        
+        res.status(500).json({ success: false, message: 'Failed to send email' });
+
     }
 
 });
