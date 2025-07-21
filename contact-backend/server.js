@@ -33,17 +33,17 @@ app.post('/contact', async (req, res) => {
             subject: `New contact form submission from ${name}`,
             text: "from =" + email + " " + message,*/
 
-            from: `"${name}" <${process.env.SMTP_USER}>`,  
+            from: `"${name}" <${process.env.SMTP_USER}>`, 
             to: process.env.TO_EMAIL,                     
-            replyTo: email,                               
+            replyTo: email,                              
             subject: `Yeni mesaj: ${name}`,
             text: `
 Yeni bir mesaj aldınız:
 
-👤 İsim: ${name}
-📧 E-posta: ${email}
-
-📝 Mesaj:
+  İsim: ${name}
+  E-posta: ${email}
+ 
+  Mesaj:
 ${message}
   `,
 
