@@ -113,6 +113,9 @@
   resize: none;
   outline: none;
   transition: border-color 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.9s ease forwards;
 }
 
 .contact-form input:focus,
@@ -134,6 +137,9 @@
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.9s ease forwards;
 }
 
 .contact-form button:hover {
