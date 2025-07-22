@@ -25,10 +25,14 @@ const Contact = () => {
                 body: JSON.stringify(formData),
 
             });
-
+            console.log('Response:', res);
+console.log('Response error', res.status);
             const data = await res.json();
+            console.log('Response data:', data);
+            console.log('Response success:', data.message);
 
             if (!res.ok || !data.success) {
+                setStatus('error');
                 throw new Error(data.message || 'Form Sending Failed');
             }
 
@@ -38,10 +42,7 @@ const Contact = () => {
         } catch (error) {
             console.error('Form Sending Error:', error);
             setStatus('error');
-        } finally {
-
-            setLoading(false);
-        }
+        } 
     };
 
     return (
