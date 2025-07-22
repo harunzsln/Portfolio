@@ -74,6 +74,7 @@ const Contact = () => {
                 ></textarea>
                 <button type="submit" disabled={loading}>
                     {loading ? 'Sending...' : 'Send Message'}
+                    {console.log('Abuzer kahireden geldi')}
                 </button>
                 {status === 'success' && <p className="success-msg">✅ Message sent successfully!</p>}
                 {status === 'error' && <p className="error-msg">❌ Something went wrong. Try again.</p>}
