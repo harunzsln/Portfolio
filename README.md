@@ -25,20 +25,8 @@ This is a fully responsive and modern portfolio website built with **React** (fr
 ### Backend
 - [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/)
 - [Nodemailer](https://nodemailer.com/) for sending emails
-- Hosted on [Render](https://render.com/)## 📁 Project Structure
+- Hosted on [Render](https://render.com/) 
 
-my-portfolio/
-├── myPortfolio-frontend/ # React frontend
-│ ├── src/
-│ │ ├── components/
-│ │ ├── styles/
-│ │ └── App.js, index.js
-│ └── .env (REACT_APP_API_URL)
-│
-└── contact-backend/ # Express backend for contact form
-├── server.js
-├── .env (SMTP credentials)
-└── package.json
 
 ##🌍 Deployment
 Frontend: Deployed via [Vercel](https://vercel.com)
