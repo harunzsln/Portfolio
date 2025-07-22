@@ -10,6 +10,7 @@ const Contact = () => {
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
+        console.log('Form data changed:', formData);
     };
 
     const handleSubmit = async (e) => {
