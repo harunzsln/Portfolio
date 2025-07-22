@@ -72,9 +72,9 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                 ></textarea>
-                <button type="submit" disabled={loading}>
+                <button type="submit" disabled={loading} onclick={() => console.log('Button clicked',loading)}>
                     {loading ? 'Sending...' : 'Send Message'}
-                    {console.log('Abuzer kahireden geldi')}
+                    
                 </button>
                 {status === 'success' && <p className="success-msg">✅ Message sent successfully!</p>}
                 {status === 'error' && <p className="error-msg">❌ Something went wrong. Try again.</p>}
