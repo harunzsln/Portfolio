@@ -28,13 +28,13 @@ This is a fully responsive and modern portfolio website built with **React** (fr
 - Hosted on [Render](https://render.com/) 
 
 
-###🌍 Deployment
+### 🌍 Deployment
 
 Frontend: Deployed via [Vercel](https://vercel.com)
 
 Backend: Deployed via [Render](https://render.com/)
 
-###👨‍💻 Developer
+### 👨‍💻 Developer
 Name: Harun Özaslan
 
 Website: https://portfolio-orpin-three-56.vercel.app/
