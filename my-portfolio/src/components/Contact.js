@@ -14,6 +14,8 @@ const Contact = () => {
     };
 
     const handleSubmit = async (e) => {
+        console.log('Form submitted:', formData);
+        console.log('Form ABUZER NE YAPIYORSUN');
         e.preventDefault();
         setLoading(true);
         setStatus(null);
