@@ -44,10 +44,13 @@ const Social = () => {
                     <h3>Linkedin</h3>
                     <p>Let's Connect</p>
                 </div>
-                <div className="card clickable">
+                <div className="card clickable"
+                onClick={() => window.open('https://open.spotify.com/user/ig4jea9ln2nz9ppx3qzlshqrh?si=0dc3ab3abdb645d6', '_blank')}>
+
                     <div className="icon"><FaSpotify /></div>
                     <h3>Spotify</h3>
-                    <p><a href="https://open.spotify.com/user/ig4jea9ln2nz9ppx3qzlshqrh?si=70b0bfddb3674166">Let's Listen</a></p>
+                    <p>Let's Listen</p>
+                    {/*<p><a href="https://open.spotify.com/user/ig4jea9ln2nz9ppx3qzlshqrh?si=70b0bfddb3674166">Let's Listen</a></p>*/}
                 </div>
             </div>
 
