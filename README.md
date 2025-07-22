@@ -32,6 +32,7 @@ This is a fully responsive and modern portfolio website built with **React** (fr
 Frontend: Deployed via [Vercel](https://vercel.com)
 
 Backend: Deployed via [Render](https://render.com/)
+
 ##👨‍💻 Developer
 Name: Harun Özaslan
 
