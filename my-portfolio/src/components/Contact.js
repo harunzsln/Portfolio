@@ -14,15 +14,13 @@ const Contact = () => {
     };
 
     const handleSubmit = async (e) => {
-        console.log('Form submitted:', formData);
-        console.log('Form ABUZER NE YAPIYORSUN');
         e.preventDefault();
         setLoading(true);
         setStatus(null);
 
 
         try {
-            const res = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
+            const res = await fetch(`https://contact-backend-k9ft.onrender.com/contact`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
@@ -76,7 +74,7 @@ console.log('Response error', res.status);
                     onChange={handleChange}
                     required
                 ></textarea>
-                <button type="submit" disabled={loading} onClick={() => console.log('Button clicked',loading)}>
+                <button type="submit" disabled={loading}>
                     {loading ? 'Sending...' : 'Send Message'}
                     
                 </button>
